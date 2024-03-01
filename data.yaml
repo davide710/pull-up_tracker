@@ -1,6 +1,0 @@
-train: org_data/train
-val: org_data/test
-nc: 2
-names: ['down',
-'up'
-]

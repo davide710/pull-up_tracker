@@ -2,9 +2,9 @@ import cv2
 from using_model import YOLO_pred
 
 
-yolo = YOLO_pred('secondo_tentativo.onnx', 'data.yaml')
+yolo = YOLO_pred('model.onnx', 'data.yaml')
 
-cap = cv2.VideoCapture('predict/pullups_challenge.mp4') # video link: https://www.youtube.com/shorts/ft7VmEyvcuc?feature=share
+cap = cv2.VideoCapture('videos/pullups_challenge.mp4') # video link: https://www.youtube.com/shorts/ft7VmEyvcuc?feature=share
 
 
 class Tracker():
