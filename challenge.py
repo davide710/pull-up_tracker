@@ -2,7 +2,7 @@ import cv2
 from using_model import YOLO_pred
 
 
-yolo = YOLO_pred('model.onnx', 'data.yaml')
+yolo = YOLO_pred('model.onnx', 'model_creation/data.yaml')
 
 cap = cv2.VideoCapture('videos/pullups_challenge.mp4') # video link: https://www.youtube.com/shorts/ft7VmEyvcuc?feature=share
 
@@ -50,14 +50,16 @@ class Tracker():
 
 
 trackers = []
-n_cicli = 0
+n_frames = 0
 
 while True:
-    n_cicli += 1
-    if n_cicli % 10 != 0:
-        continue
+    n_frames += 1
 
     ret, frame = cap.read()
+
+    if n_frames % 3 != 0:
+        continue # skipping some frames so it will be faster
+
     if ret == False:
         break
 
