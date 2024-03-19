@@ -13,6 +13,8 @@ pip install numpy opencv-contrib-python pyyaml
 
 # To execute a script with a video
 python3 [script.py] /path/to/video
+# To execute the script challenge.py with the example
+python3 challenge.py videos/pullups_challenge.mp4
 # To execute it with live webcam (you may need to adjust webcam configurations in the script)
 python3 [script.py] -live
 ```
