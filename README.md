@@ -18,6 +18,10 @@ python3 challenge.py videos/pullups_challenge.mp4
 # To execute it with live webcam (you may need to adjust webcam configurations in the script)
 python3 [script.py] -live
 ```
+This is the result obtained with [videos/pullups_challenge.mp4](videos/pullups_challenge.mp4):
+![result](demo_result.avi)
+
+The original video was taken from https://www.youtube.com/shorts/ft7VmEyvcuc?feature=share
 #
 #
 _"Manually counting repetitions? Yeah, I think the ancient Greeks used to do it too"_
