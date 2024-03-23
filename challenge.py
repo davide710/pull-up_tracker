@@ -62,6 +62,11 @@ if __name__ == '__main__':
     trackers = []
     n_frames = 0
 
+    #frame_width = int(cap.get(3))
+    #frame_height = int(cap.get(4))
+    #size = (frame_width, frame_height) 
+    #result = cv2.VideoWriter('demo_result.avi', cv2.VideoWriter_fourcc(*'MJPG'), 10, size) # to create a video with the result
+    
     while True:
         n_frames += 1
 
@@ -100,6 +105,7 @@ if __name__ == '__main__':
                 tracker.draw_bbox(frame)            
                         
         cv2.imshow('video', frame)
+        #result.write(frame)
         if cv2.waitKey(1) == 27: ##esc
             break
 
