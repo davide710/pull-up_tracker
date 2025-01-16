@@ -23,5 +23,4 @@ This is the result obtained with [videos/pullups_challenge.mp4](videos/pullups_c
 
 The original video was taken from https://www.youtube.com/shorts/ft7VmEyvcuc?feature=share
 #
-#
-_"Manually counting repetitions? Yeah, I think the ancient Greeks used to do it too"_
+
